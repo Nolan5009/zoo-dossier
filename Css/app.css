@@ -1,9 +1,13 @@
+body{
+    background-color: #ffffff;
+    margin:0;
+}
 nav#main-nav {
-    background-color: #006c76;
+    background-color: #ff891b;
 }
 
 #main-nav a{
-    Background-color: #f0ff7e;
+    Background-color: #1a9a00;
     padding: 1em;
     display: inline-block;
     color: #000000;
@@ -14,6 +18,10 @@ nav#main-nav {
 }
 
 #main-nav a:hover{
-    background-color: #74E8F2;
+    background-color: #20c300;
     color: #ffffff;
+}
+
+img:hover {
+    box-shadow: 6px 6px orange;
 }
