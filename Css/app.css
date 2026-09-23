@@ -3,7 +3,11 @@ body{
     margin:0;
 }
 nav#main-nav {
-    background-color: #ff891b;
+    position: fixed;
+    background-color: #177200;
+    z-index: 100;
+    width: 100%;
+    top: 0rem;
 }
 
 #main-nav a{
@@ -20,8 +24,39 @@ nav#main-nav {
 #main-nav a:hover{
     background-color: #20c300;
     color: #ffffff;
+    font-size: 1.6rem;
+    transition: all ease 300ms;
 }
 
-img:hover {
-    box-shadow: 6px 6px orange;
+img{
+    border-radius: 30px;
+}
+
+#Image-Container>img:hover{
+    box-shadow: 6px 6px #F68B1F;
+    transition: all ease 300ms;
+}
+
+img#Homepage-Image:hover {
+    filter: blur(2px);
+    transition: all ease 300ms;
+}
+
+.back-to-top{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    z-index: 100;
+    transition: background ease 300ms;
+    background: #F68B1F;
+    text-align: center;
+    line-height: 3rem;  
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
 }
