@@ -19,6 +19,8 @@ nav#main-nav {
     font-family: sans-serif;
     text-decoration: none;
     transition: all ease 300ms;
+    margin-right: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #main-nav a:hover{
@@ -28,17 +30,44 @@ nav#main-nav {
     transition: all ease 300ms;
 }
 
-img{
+main {
+    margin-top: 80px;
+}
+
+.flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 1360px;
+    margin: 0 auto;
+}
+.Content-Box{
+    width: 23.5%;
+}
+
+.Image-Container{
+    position: relative;
+}
+
+img.Homepage-Image{
+    text-align: center;
     border-radius: 30px;
 }
 
-#Image-Container>img:hover{
+.Image-Container>img:hover{
     box-shadow: 6px 6px #F68B1F;
     transition: all ease 300ms;
 }
+.Image-Container .centered{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 
-img#Homepage-Image:hover {
+img.Homepage-Image:hover {
     filter: blur(2px);
+    
     transition: all ease 300ms;
 }
 
@@ -56,6 +85,11 @@ img#Homepage-Image:hover {
     line-height: 3rem;  
     font-size: 1.5rem;
     text-decoration: none;
+    transition: all ease 300ms;
+}
+
+.back-to-top:hover{
+    box-shadow: 3px 3px #000000;
 }
 html {
     scroll-behavior: smooth;
