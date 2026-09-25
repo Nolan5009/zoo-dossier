@@ -1,6 +1,9 @@
 body{
     background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 0;
     margin:0;
+    font-family: sans-serif;
 }
 nav#main-nav {
     position: fixed;
@@ -30,6 +33,10 @@ nav#main-nav {
     transition: all ease 300ms;
 }
 
+main a{
+    color: purple;
+}
+
 main {
     margin-top: 80px;
 }
@@ -40,36 +47,93 @@ main {
     justify-content: space-between;
     max-width: 1360px;
     margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .Content-Box{
-    width: 23.5%;
+    width: 24%;
 }
 
 .Image-Container{
     position: relative;
+    margin: 0;
 }
 
 img.Homepage-Image{
     text-align: center;
     border-radius: 30px;
+    max-width: 100%;
+    object-fit: cover;
 }
 
 .Image-Container>img:hover{
     box-shadow: 6px 6px #F68B1F;
     transition: all ease 300ms;
 }
+
 .Image-Container .centered{
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%,-50%);
+    color: #ffffff;
+    opacity: 0;
+    transition: opacity all ease 100ms;
+}
+
+.Image-Container:hover .centered{
+    opacity: 1;
 }
 
 img.Homepage-Image:hover {
-    filter: blur(2px);
+    filter: blur(10px);
     
     transition: all ease 300ms;
 }
+
+.homepageTitle
+{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+}
+
+.subTitle{
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+.infoImg{
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+.infoLink{
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+.titleImg{
+    display: flex;
+    justify-content: center;
+}
+
+.titleLink{
+    text-align: center;
+}
+
+
+.text{
+    background-color: #facea3;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+
+
 
 .back-to-top{
     position: fixed;
@@ -80,9 +144,9 @@ img.Homepage-Image:hover {
     border-radius: 50%;
     z-index: 100;
     transition: background ease 300ms;
-    background: #F68B1F;
+    background: #FEF3E9;
     text-align: center;
-    line-height: 3rem;  
+    line-height: 3rem;
     font-size: 1.5rem;
     text-decoration: none;
     transition: all ease 300ms;
